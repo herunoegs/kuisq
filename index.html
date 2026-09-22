@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kuis Matematika Kelas 4 SD">
+  <title>Kuis Matematika Kelas 4 SD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section id="home" class="card hero">
+      <div class="logo">✏️</div>
+      <p class="badge">MATEMATIKA KELAS 4 SD</p>
+      <h1>Kuis Pintar</h1>
+      <p class="lead">Belajar matematika menjadi lebih menyenangkan. Pilih materi dan uji kemampuanmu!</p>
+      <div class="topic-list">
+        <button class="topic active" data-topic="all">📚 Semua Materi</button>
+        <button class="topic" data-topic="nilai">🔢 Nilai Tempat</button>
+        <button class="topic" data-topic="operasi">➕ Operasi Hitung</button>
+        <button class="topic" data-topic="perkalian">✖️ Perkalian & Pembagian</button>
+        <button class="topic" data-topic="faktor">🧩 Kelipatan & Faktor</button>
+      </div>
+      <button id="start" class="btn primary">Mulai Kuis 🚀</button>
+    </section>
+
+    <section id="quiz" class="card hidden">
+      <div class="quiz-head"><button id="quit" class="back">← Materi</button><span id="counter">Soal 1 dari 10</span><span id="points">0 poin</span></div>
+      <div class="progress"><span id="progress-bar"></span></div>
+      <div class="question-number" id="question-number">PERTANYAAN 1</div>
+      <h2 id="question">Pertanyaan</h2>
+      <div id="answers" class="answers"></div>
+      <p id="explanation" class="explanation hidden"></p>
+      <button id="next" class="btn primary next" disabled>Jawab Dulu</button>
+    </section>
+
+    <section id="result" class="card hidden result">
+      <div class="trophy">🏆</div>
+      <p class="badge">KUIS SELESAI</p>
+      <h1>Hasil Kuis</h1>
+      <div id="score" class="score">0/0</div>
+      <p id="message" class="lead"></p>
+      <div class="result-actions"><button id="again" class="btn primary">🔄 Main Lagi</button><button id="choose" class="btn secondary">Pilih Materi</button></div>
+    </section>
+  </main>
+  <footer>Belajar hari ini, hebat esok hari! 🌟</footer>
+  <script src="script.js"></script>
+</body>
+</html>
