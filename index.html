@@ -13,7 +13,7 @@
       <div class="logo">✏️</div>
       <p class="badge">MATEMATIKA KELAS 4 SD</p>
       <h1>Kuis Pintar</h1>
-      <p class="lead">Belajar matematika menjadi lebih menyenangkan. Pilih materi dan uji kemampuanmu!</p>
+      <p class="lead">Latihan dengan soal baru setiap kali bermain. Pilih materi dan uji kemampuanmu!</p>
       <div class="topic-list">
         <button class="topic active" data-topic="all">📚 Semua Materi</button>
         <button class="topic" data-topic="nilai">🔢 Nilai Tempat</button>
@@ -21,7 +21,12 @@
         <button class="topic" data-topic="perkalian">✖️ Perkalian & Pembagian</button>
         <button class="topic" data-topic="faktor">🧩 Kelipatan & Faktor</button>
       </div>
-      <button id="start" class="btn primary">Mulai Kuis 🚀</button>
+      <div class="settings">
+        <label for="question-count">Jumlah soal</label>
+        <select id="question-count"><option value="5">5 soal</option><option value="10" selected>10 soal</option><option value="15">15 soal</option><option value="20">20 soal</option></select>
+      </div>
+      <button id="start" class="btn primary">🎲 Generate & Mulai Kuis</button>
+      <p class="hint">Soal angka akan dibuat secara acak setiap kuis dimulai.</p>
     </section>
 
     <section id="quiz" class="card hidden">
@@ -35,12 +40,9 @@
     </section>
 
     <section id="result" class="card hidden result">
-      <div class="trophy">🏆</div>
-      <p class="badge">KUIS SELESAI</p>
-      <h1>Hasil Kuis</h1>
-      <div id="score" class="score">0/0</div>
-      <p id="message" class="lead"></p>
-      <div class="result-actions"><button id="again" class="btn primary">🔄 Main Lagi</button><button id="choose" class="btn secondary">Pilih Materi</button></div>
+      <div class="trophy">🏆</div><p class="badge">KUIS SELESAI</p><h1>Hasil Kuis</h1>
+      <div id="score" class="score">0/0</div><p id="message" class="lead"></p>
+      <div class="result-actions"><button id="again" class="btn primary">🎲 Generate Lagi</button><button id="choose" class="btn secondary">Pilih Materi</button></div>
     </section>
   </main>
   <footer>Belajar hari ini, hebat esok hari! 🌟</footer>
